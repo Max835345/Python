@@ -1,0 +1,9 @@
+1 способ
+
+print("Glo", "Academy")
+print("Glo Academy")
+print('Glo Academy')
+
+2 способ
+
+print("Glo Academy")
