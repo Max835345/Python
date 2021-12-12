@@ -1,0 +1,8 @@
+# тест пройдется только для трехзначных чисел
+
+num = int(input())
+divis = num // 100
+pro = num % 10
+pd = num //10%10
+print(divis+pro+pd)
+print(divis*pro*pd)
