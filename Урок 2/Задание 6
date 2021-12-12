@@ -1,0 +1,7 @@
+num = int(input())
+d = num // 1000
+po = num // 100%10
+pr = num % 10
+pd = num //10%10
+
+print(max(d, po, pr, pd))
