@@ -1,0 +1,4 @@
+hw = int(input())
+day = int(input())
+
+print(hw//day)
