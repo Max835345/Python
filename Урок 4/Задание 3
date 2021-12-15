@@ -1,0 +1,14 @@
+offer = input()
+offer2 = input()
+offer3 = input()
+
+symbols = len(offer)
+symbols2 = len(offer2)
+symbols3 = len(offer3)
+
+if symbols2 <symbols>symbols3:
+    print(offer)
+elif symbols < symbols2 >symbols3:
+    print(offer2)
+elif symbols < symbols3 >symbols2:
+    print(offer3)
