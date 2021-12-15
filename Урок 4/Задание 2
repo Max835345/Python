@@ -1,0 +1,6 @@
+offer = input()
+
+if "Glo Academy" in offer:
+    print("YES")
+else:
+    print("NO")
