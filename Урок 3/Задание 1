@@ -1,0 +1,12 @@
+print("введите пароль")
+
+password = input()
+
+print("введите пароль ещё раз")
+
+password_check = input()
+
+if password == password_check:
+    print("Все окей!")
+else:
+    print("Пароли не совпадают!")
