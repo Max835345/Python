@@ -1,0 +1,13 @@
+mass = int(input())
+
+if mass % 2 == 0:
+    print("YES")
+else:
+    print("NO")
+
+#5
+
+hw = int(input())
+day = int(input())
+
+print(hw//day)
