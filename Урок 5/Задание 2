@@ -1,0 +1,7 @@
+ran= int(input())
+num = 0
+
+for i in range(0, ran):
+    num += 1
+    kvad = num **2
+    print("Квадрат числа", num, "равен", kvad)
