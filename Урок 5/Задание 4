@@ -1,0 +1,9 @@
+num = int(input())
+num2 = int(input())
+num2 += 1
+zer = 0
+
+for i in range(num,num2):
+    zer += 1
+    if zer % 2 == 0:
+        print(zer)
