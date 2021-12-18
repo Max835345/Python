@@ -1,0 +1,6 @@
+num = int(input())
+num2 = int(input())
+num2 += 1
+
+for i in range(num,num2):
+    print(i)
