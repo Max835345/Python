@@ -1,0 +1,10 @@
+num = int(input())
+num2 = int(input())
+num2 += 1
+zer = 0
+number = int(input())
+
+for i in range(num,num2):
+    zer += 1
+    sum = number * zer
+    print(number, 'x', zer, '=', sum )
