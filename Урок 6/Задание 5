@@ -1,0 +1,10 @@
+val = ''
+i = 0
+i1 = 0
+while val != 0:
+    val = int(input())
+    if val < 0:
+       i += 1
+    if val > 0:
+        i1 += 1
+print(i * i1)
