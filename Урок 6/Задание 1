@@ -1,0 +1,9 @@
+num = int(input())
+i = 0
+if num % 2 == 0:
+    while num % 2 == 0:
+        num //= 2
+        i += 1
+    print(i)
+else:
+    print(0)
