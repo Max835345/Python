@@ -1,0 +1,11 @@
+sec = 0
+mint = 0
+hour = 0
+
+while sec != 59:
+    sec += 1
+    while mint != 59:
+        mint += 1
+    while hour != 23:
+        hour += 1
+print(hour, ':', mint, ":", sec)
