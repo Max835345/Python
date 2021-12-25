@@ -1,0 +1,15 @@
+n = int(input())
+sum_ = 0
+sqrNum = 0
+while n != 0:
+    num = n % 10
+    sum_ = sum_ + num
+    n = n // 10
+while sum_ != 0:
+    num = sum_ % 10
+    sqrNum = sqrNum + num
+    sum_ = sum_ // 10
+if sqrNum > 10:
+    print(sqrNum % 10 +  sqrNum // 10 % 10)
+else:
+    print(sqrNum)
