@@ -1,0 +1,12 @@
+num = int(input())
+total = 0
+i = 0
+
+while num != 0:
+    last_dig = num % 10
+    total = last_dig
+    num = num // 10
+if total == 1:
+    print('YES')
+else:
+    print('NO')
