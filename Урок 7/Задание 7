@@ -2,9 +2,7 @@ sec = 0
 mint = 0
 hour = 0
 
-for i in range(59):
-    sec += 1
-    mint += 1
-    for hour in range(23):
-        hour += 1
-    print(hour, ':', mint, ':', sec)
+for hour in range(24):
+    for mint in range(60):
+        for sec in range(60):
+            print(hour, ':', mint, ':', sec)
