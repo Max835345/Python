@@ -1,0 +1,13 @@
+num = int(input())
+one = 0
+three = 0
+seven = 0
+
+for i in range(1, num + 1):
+    if i % 10 == 1:
+        one += i
+    if i % 10 == 3:
+        three += i
+    if i % 10 == 7:
+        seven += i
+print(one + three + seven)
