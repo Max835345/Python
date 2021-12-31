@@ -1,0 +1,14 @@
+nummax = int(input())
+numin = int(input())
+
+if nummax > 2 or nummax == 2:
+    for i in range(1,nummax+1):
+        numb = int(input())
+        if numb > nummax:
+            nummax = numb
+        if numb < numin:
+            numin = numb
+    print('Максимум равен', nummax)
+    print('Минимум равен', numin)
+else:
+    print('Введите число которое больше или равно двум')
