@@ -1,0 +1,4 @@
+for i in range(65,122):
+    if i == 91 or i == 92 or i == 93 or i == 94 or i == 95 or i == 96:
+        continue
+    print(chr(i))
