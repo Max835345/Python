@@ -1,0 +1,5 @@
+var = input()
+if var.lower():
+    print(var.upper())
+if var.upper():
+    print(var.lower())
