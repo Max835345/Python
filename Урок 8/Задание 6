@@ -1,0 +1,5 @@
+text = input()
+for i in range(len(text)):
+    cat = text[i]
+    if cat.isdigit():
+        print(cat)
