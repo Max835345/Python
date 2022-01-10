@@ -1,0 +1,7 @@
+dub = [int(s) for s in input().split()]
+counter = 0
+for i in range(len(dub)):
+    for j in range(i + 1, len(dub)):
+        if dub[i] == dub[j]:
+            counter += 1
+print(counter)
