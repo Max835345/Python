@@ -1,0 +1,5 @@
+var = input()
+search = input()
+list = var.split()
+if search in list:
+    print(search)
