@@ -1,0 +1,4 @@
+name = input()
+my_list = name.split('\\')
+newl = '\n'.join(my_list)
+print(newl)
