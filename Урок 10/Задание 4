@@ -1,0 +1,6 @@
+def cost(cost):
+    return 100+ 50 * (cost - 1)
+
+n = int(input())
+
+print(cost(n))
