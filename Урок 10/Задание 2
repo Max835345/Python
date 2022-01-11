@@ -1,0 +1,11 @@
+def max_min(my_list, m_list):
+    print(int(my_list)*int(m_list))
+
+
+myl = input()
+mylis = myl.split()
+ml = input()
+mylis2 = ml.split()
+maximum = max(mylis)
+maximum2 = max(mylis2)
+print(max_min(maximum,maximum2))
