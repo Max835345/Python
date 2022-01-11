@@ -1,0 +1,12 @@
+def monf(numb):
+    if numb == 4 or numb == 6 or numb == 9 or numb == 11:
+        print(" 30")
+    elif numb == 2:
+        print("28")
+    else:
+        print("31")
+
+
+date = int(input())
+monf(date)
+4
