@@ -1,20 +1,18 @@
-def razr(number):
+def razr(number,number2):
     total = 0
+    total2 = 0
     while number > 0:
         number % 10
         number = number // 10
         total += 1
-    return total
-
-def razr2(number2):
-    total2 = 0
     while number2 > 0:
         number2 % 10
         number2 = number2 // 10
         total2 += 1
-    return total2
+    mult = total*total2
+    print(mult)
 
 
 num = int(input())
 num2 = int(input())
-print(razr(num)*razr2(num2))
+print(razr(num,num2))
