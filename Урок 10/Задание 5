@@ -1,0 +1,6 @@
+def star(date: str):
+    return int(date[0:2]) * int(date[3:5]) == int(date[8:10])
+
+
+dt = input()
+print(star(dt))
