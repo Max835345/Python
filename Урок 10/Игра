@@ -1,0 +1,63 @@
+import random
+
+
+def valid(var):
+    if var.isdigit():
+        numb = int(var)
+        if 1 <= numb <= 100:
+            return True
+        else:
+            return False
+    else:
+        return False
+
+
+print('Добро пожаловать в игру')
+
+number = int(input('Введите последнее число диапозона рандомных число '))
+secret_numb = random.randint(1, number)
+i = 0
+while True:
+    print("Введите число")
+    i += 1
+    digit = input()
+    if not valid(digit):
+        continue
+    numb = int(digit)
+    if numb > secret_numb:
+        print('СЛИШКОМ БОЛЬШЕ ЧИСЛО! попробуйте ввести поменьше')
+    if numb < secret_numb:
+        print('слишком маленькоое число! попробуйте ввести ппобольше')
+    if numb == secret_numb:
+        print("!!!ПОБЕДАА!!!")
+        break
+print("Спасибо за игру")
+print("Ваши попытки:", i)
+
+count = 0
+num1, num2 = 1, 100
+enter = 0
+
+number = int(input("Введите число от 1 до 100: "))
+
+x = 1
+y = 100
+guess = random.randint (x, y)
+tries = 1
+
+if number == guess:
+    print('С первой попытки!')
+else:
+    while guess != number:
+        if number > guess:
+            print("Загаданное число больше: ", guess)
+            x = guess
+            guess = random.randint(x, y)
+            tries += 1
+        elif number < guess:
+            print("Загаданное число меньше: ", guess)
+            y = guess
+            guess = random.randint(x, y)
+            tries += 1
+    print (number)
+    print ('В яблочко, с', tries, 'попытки')
