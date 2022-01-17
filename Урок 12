@@ -1,0 +1,82 @@
+import random
+
+
+print("Добро пожаловать в генератор паролей")
+
+def genpass(n):
+    password = ''
+    for i in range(lengt):
+        rand_index = random.randint(0, len(chars) - 1)
+        password += chars[rand_index]
+    return password
+
+def main(n, m):
+    return [genpass(m) for _ in range(n)]
+
+
+lengt = int(input("Введите длину пароля "))
+calv = int(input("Введите количество паролей "))
+dig = (input("Нужны ли цифры ? Введите Да или нет "))
+latin = (input("Нужны латинские буквы? Введите Да или нет "))
+latin_up = (input("Нужны большие латинские буквы? Введите Да или нет "))
+rus = (input("Нужны русские буквы? Введите Да или нет "))
+rus_stroch = (input("Нужны русские строчные буквы? Введите Да или нет "))
+rus_upper = (input("Нужны русские заглавные буквы? Введите Да или нет "))
+punct_sings = (input("Нужны знакие пунктуации буквы? Введите Да или нет "))
+
+
+chars = ''
+big = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+low = 'qwertyuiopasdfghjklzxcvbnm'
+num = '1234567890'
+spe = '!@#$%^&amp;*()'
+rus_low = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+rus_big = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
+
+if dig == 'Да' or 'да':
+    chars += num
+
+if latin == 'Да' or 'да':
+    chars += low
+
+if latin_up == 'Да' or 'да':
+    chars += big
+
+if rus == 'Да' or 'да':
+    chars += rus_low
+
+if rus_stroch == 'Да' or 'да':
+    chars += rus_low
+
+if rus_upper == 'Да' or 'да':
+    chars += rus_big
+
+if punct_sings == 'Да' or 'да':
+    chars += spe
+
+password = ''
+for i in range(lengt):
+    rand_index = random.randint(0, len(chars) - 1)
+    password += chars[rand_index]
+print(password)
+print(main(calv,lengt))
+
+qwest = input("Нужен ли вам еще пароль ")
+
+if qwest == "Да" or "да":
+    lengt = int(input("Введите длину пароля "))
+    calv = int(input("Введите количество паролей "))
+    dig = (input("Нужны ли цифры ? Введите Да или нет "))
+    latin = (input("Нужны латинские буквы? Введите Да или нет "))
+    latin_up = (input("Нужны большие латинские буквы? Введите Да или нет "))
+    rus = (input("Нужны русские буквы? Введите Да или нет "))
+    rus_stroch = (input("Нужны русские строчные буквы? Введите Да или нет "))
+    rus_upper = (input("Нужны русские заглавные буквы? Введите Да или нет "))
+    punct_sings = (input("Нужны знакие пунктуации буквы? Введите Да или нет "))
+    password = ''
+
+    while calv != 0:
+        calv -= 1
+        rand_index = random.randint(0, len(chars) - 1)
+        password += chars[rand_index]
+    print(password)
