@@ -65,7 +65,6 @@ qwest = input("Нужен ли вам еще пароль ")
 
 if qwest == "Да" or "да":
     lengt = int(input("Введите длину пароля "))
-    calv = int(input("Введите количество паролей "))
     dig = (input("Нужны ли цифры ? Введите Да или нет "))
     latin = (input("Нужны латинские буквы? Введите Да или нет "))
     latin_up = (input("Нужны большие латинские буквы? Введите Да или нет "))
@@ -73,10 +72,11 @@ if qwest == "Да" or "да":
     rus_stroch = (input("Нужны русские строчные буквы? Введите Да или нет "))
     rus_upper = (input("Нужны русские заглавные буквы? Введите Да или нет "))
     punct_sings = (input("Нужны знакие пунктуации буквы? Введите Да или нет "))
-    password = ''
 
-    while calv != 0:
-        calv -= 1
+    password = ""
+
+    while lengt != 0:
+        lengt -= 1
         rand_index = random.randint(0, len(chars) - 1)
         password += chars[rand_index]
     print(password)
