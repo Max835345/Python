@@ -1,0 +1,51 @@
+
+def letter(secret_word, user_word, char):
+    new_us_word = ''
+    for i in range(len(secret_word)):
+        if secret_word[i] == char:
+            new_us_word += char
+        else:
+            new_us_word += user_word[i]
+    return new_us_word
+
+
+def chek_letter(char_letter):
+    if char_letter == char_letter:
+        print('Такая буква уже была')
+
+
+def rus(lett, alphabet=set('абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ')):
+    for i in alphabet:
+        if lett == i:
+            return print("Введите английскую букву!!!")
+
+while True:
+    secret_word = 'samurai'
+    user_word = '*******'
+    i = 0
+
+    print(len(secret_word) * '*')
+    while user_word != secret_word:
+        i += 1
+        user_char = input('Введите букву на английском ')
+        if len(user_char) != 1:
+            continue
+
+        rus(user_char)
+        new_us_word = letter(secret_word, user_word, user_char)
+        chek_letter(user_char)
+        if user_word == new_us_word:
+            print('Нет такой буквы')
+        else:
+            print("Есть такая буква")
+
+        user_word = new_us_word
+        print(user_word)
+
+    qwest = input('Хотите ли сыграть еще раз??? ')
+
+    if qwest == 'Нет' or qwest == 'нет':
+        break
+
+print('!!!Вы угадали слово!!!')
+print('Количество папыток равно', i)
