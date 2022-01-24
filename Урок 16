@@ -1,0 +1,46 @@
+qwestion = [
+    '№1 Сколько будет 2+2*2?',
+    '№2 Бревно надо распелить на 10 частей, сколько нужно сделать распилов?',
+    '№3 На двух руках 10 пальцев, сколько пальцев на 5 руках?',
+    '№4 Пять свечей горело, две потухло сколько свечей осталось?',
+    '№5 Сколько серий в ван пис на данный момент'
+]
+
+answer = [6, 9, 25, 2, 1007]
+
+name = input('Введите ваше имя ')
+
+while True:
+    count_right_answ = 0
+
+    for i in range(len(qwestion)):
+        print(qwestion[i])
+        user_answer = int(input())
+        right_answer = answer[i]
+        if user_answer == right_answer:
+            count_right_answ += 1
+
+    print(count_right_answ)
+
+    if count_right_answ == 0:
+        print(name, 'Вы Идиот')
+
+    if count_right_answ == 1:
+        print(name, 'Вы Кретин')
+
+    if count_right_answ == 2:
+        print(name, 'Вы Дурак')
+
+    if count_right_answ == 3:
+        print(name, 'Вы Нормальный')
+
+    if count_right_answ == 4:
+        print(name, 'Вы Талант')
+
+    if count_right_answ == 5:
+        print(name, 'Вы Гений')
+
+    qwest = input()
+
+    if qwest == 'Нет' or qwest == 'нет':
+        break
